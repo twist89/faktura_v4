@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4CC4D057-6D5F-448E-80B4-0F753D259C59}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>designExp03</RootNamespace>
+    <AssemblyName>designExp03</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="AngebotWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AuftrageWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AuftragsSucheWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FertigWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="KundenWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LieferantWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="AngebotWindow.xaml.cs">
+      <DependentUpon>AngebotWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AuftrageWindow.xaml.cs">
+      <DependentUpon>AuftrageWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AuftragsSucheWindow.xaml.cs">
+      <DependentUpon>AuftragsSucheWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FertigWindow.xaml.cs">
+      <DependentUpon>FertigWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KundenWindow.xaml.cs">
+      <DependentUpon>KundenWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LieferantWindow.xaml.cs">
+      <DependentUpon>LieferantWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="MitarbeiterWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MitarbeiterWindow.xaml.cs">
+      <DependentUpon>MitarbeiterWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\header01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\logo-maag02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\icons\iconHome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\icons\iconAdmin.png" />
+    <Resource Include="images\icons\iconConv.png" />
+    <Resource Include="images\icons\iconMessage.png" />
+    <Resource Include="images\icons\iconSettings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\icons\iconKunden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\icons\iconAdmin2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\icons\iconLieferant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\icons\iconAngebot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\icons\iconAuftrageBest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\icons\iconBestellung.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\icons\iconMaterialien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\icons\iconAuftrageSuche.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\icons\IkonaProfila.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\icons\IkonaUredi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\icons\IkonaButtonOdustani.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\icons\IkonaButtonOk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\icons\IkonaObrisi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\icons\IkonaFileManager.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
